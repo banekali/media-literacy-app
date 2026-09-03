@@ -1,0 +1,26 @@
+# PWA metadata for installing on mobile/tablets
+{
+  "short_name": "Media Literacy",
+  "name": "Media Literacy & Critical Discourse Analysis Studio",
+  "description": "Interactive CLIL media literacy and critical discourse analysis curriculum app for intermediate ESL students.",
+  "icons": [
+    {
+      "src": "media/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "media/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "any",
+  "categories": ["education", "productivity"]
+}
