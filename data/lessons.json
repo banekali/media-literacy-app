@@ -1,3 +1,4 @@
+
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "meta": {
@@ -11,7 +12,7 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "title": "Real vs. Fake & Source Evaluation",
+      "title": "Media Impact & Narrative Sovereignty",
       "summary": "Students learn to check online source reliability, identify domain suffixes, evaluate author credibility, and complete a Fact-Checker Matrix.",
       "teacherGuide": {
         "logistics": {
@@ -123,18 +124,74 @@
       "slides": [
         {
           "slideNumber": 1,
-          "title": "Week 1: Media Detectives - Real vs. Fake",
+          "title": "VOICES OF RIAU: International Youth Journalism & Cultural Advocacy",
           "layout": "hero",
-          "content": "# Becoming a Media Detective\nEvaluating Online Sources & Spotting Unreliable Information",
-          "speakerNotes": "Welcome students. Set the stage for digital citizenship and critical thinking."
+          "content": "# SESSION 1: SECONDARY EDUCATION (GRADES 7-10 / CEFR B1-C1)\n\nWelcome to the active international newsroom. Over the next unit, you are not just practicing English—you are working as investigative reporters, editors, and producers reclaiming the narrative of our home region.",
+          "speakerNotes": "Welcome team. Today, our classroom officially transforms into an active international newsroom. Over the next seven weeks, you are not just practicing English—you are working as investigative reporters, editors, and producers reclaiming the narrative of our home region."
         },
         {
           "slideNumber": 2,
-          "title": "Anatomy of a URL Domain",
+          "title": "The Headline Challenge: Media Impact",
+          "layout": "comparative-table",
+          "content": "### Comparing Media Framing\n\n* **Headline A (External Deficit Framing)**: *\"Disaster in Sumatra: Fragile Peatlands Face Irreversible Destruction.\"*\n  * **Emotional Impact**: Creates a sense of total tragedy and helplessness.\n  * **Agency**: Portrays local residents as passive, helpless victims.\n\n* **Headline B (Solution & Agency Framing)**: *\"Riau Communities Deploy Local Hydrology Systems to Restore Historic Peatland Ecosystems.\"*\n  * **Emotional Impact**: Inspires purpose and systemic problem-solving.\n  * **Agency**: Highlights local specialists actively restoring land stewardship.",
+          "speakerNotes": "Examine the two headlines. Notice how word choice and framing completely change how the reader perceives the community's power and actions."
+        },
+        {
+          "slideNumber": 3,
+          "title": "Core Concept: Narrative Sovereignty",
+          "layout": "hero",
+          "content": "### Definition\nThe right and power of a community to tell their own stories, represent their own culture, and control how their reality is reported globally.\n\n* **Story Ownership**: Local youth replace external news crews with authentic, primary-source investigation.\n* **Global Reach**: Utilizing precise international English (CEFR B1-C1) to broadcast Riau's true context to world audiences.",
+          "speakerNotes": "Narrative sovereignty means taking control of our own representation instead of relying on external media crews."
+        },
+        {
+          "slideNumber": 4,
+          "title": "Reporting Styles: Deficit vs. Agency",
+          "layout": "comparative-table",
+          "content": "### Deficit-Based Framing (AVOID)\nFocuses exclusively on problems, poverty, damage, or helplessness in a region while ignoring local leadership.\n> *\"A deficit implies something is lacking. It portrays communities strictly by what they lack rather than what they build.\"*\n\n---\n\n### Agency-Based Reporting (OUR GOAL)\nInvestigates real ecological challenges while documenting community land stewardship, local hydrologists, and solutions.\n> *\"Agency focuses on the capacity of local leaders and youth to act independently and solve complex problems.\"*",
+          "speakerNotes": "Always challenge deficit framing. As newsroom reporters, your goal is to highlight community action and agency."
+        },
+        {
+          "slideNumber": 5,
+          "title": "Case Study: Kampar Peatlands - Beyond the Disaster Script",
           "layout": "split-text-image",
-          "content": "* **.go.id / .gov**: Government Agency (High Trust)\n* **.ac.id / .edu**: Academic / University (High Trust)\n* **.com / .org**: Commercial / Public (Verify Author)\n* **.blogspot.com / free domains**: Personal / Unverified",
+          "content": "* **The Deficit Script**: For decades, global crews arrived during dry seasons to capture haze footage, labeling Riau an 'environmental catastrophe zone.'\n* **Restoring the Full Picture**: Local hydrologists, village fire-prevention teams (*Masyarakat Peduli Api*), and youth activists actively manage and restore these vital peatlands.\n* **Reporters' Duty**: Investigate both the challenges and the engineered solutions.",
           "mediaId": "W1-CARD-4",
-          "speakerNotes": "Point out how domain extensions act as first-pass trust indicators."
+          "speakerNotes": "Look beyond the disaster script. Ensure your reports include local hydrologists and fire-prevention teams actively managing the peatlands."
+        },
+        {
+          "slideNumber": 6,
+          "title": "The Three Pillars of Newsroom Ethics",
+          "layout": "hero",
+          "content": "1. **Accuracy & Verification**: Never publish a claim without at least two primary source verifications and direct evidence from field research.\n2. **Informed Consent**: Interview subjects must know WHO you are, WHERE the story goes, and explicitly AGREE to be recorded.\n3. **Balance & Context**: Avoid sensational tragedy. Always include local agency, background history, and systemic context.",
+          "speakerNotes": "Every international journalist operates under strict ethics. These three pillars keep our newsroom professional and trusted."
+        },
+        {
+          "slideNumber": 7,
+          "title": "The 4-Step Ethical Interview Checklist",
+          "layout": "hero",
+          "content": "* **1. Clear Identification**: Introduce yourself by name, school, and your role with the VOICES OF RIAU youth newsroom.\n* **2. Project Transparency**: Explain clearly what the story is about and where it will be published (podcast or digital web journal).\n* **3. Informed Consent**: Ask explicitly: *\"Do I have your permission to record our conversation and use your name in our report?\"*\n* **4. Right to Pause**: Inform the subject: *\"You can pause the interview or decline to answer any question at any time.\"*",
+          "speakerNotes": "Review this 4-step checklist with your newsroom pod before conducting any audio or video interviews."
+        },
+        {
+          "slideNumber": 8,
+          "title": "Selecting Your Newsroom Beat",
+          "layout": "hero",
+          "content": "* **Desk 1: Ecology & Conservation**: Rainforest biodiversity, peatland hydrology, wildlife corridor protection, and community forestry programs.\n* **Desk 2: Energy & Economics**: Renewable energy transitions, sustainable palm oil practices, carbon markets, and regional green economics.\n* **Desk 3: Youth Culture & Identity**: Civic activism, indigenous Malay and Sea Tribe heritage preservation, and digital youth expression.",
+          "speakerNotes": "Choose your newsroom beat carefully. Each desk focuses on critical regional issues requiring deep investigation."
+        },
+        {
+          "slideNumber": 9,
+          "title": "Media Framing & Perspective Matrix",
+          "layout": "comparative-table",
+          "content": "| Analysis Metric | External / Global Report | Local / Solution-Oriented Report |\n| :--- | :--- | :--- |\n| **Headline & Tone** | *\"Catastrophe Strikes Peatlands\"* | *\"Villagers Deploy Canal Blocks\"* |\n| **Primary Focus** | Uncontrolled destruction & damage | Active restoration & hydrological engineering |\n| **Featured Sources** | Outside NGO directors, foreign commentators | Local hydrologists, community leaders, youth |\n| **Portrayal of Residents** | Helpless bystanders, passive victims | Active problem-solvers & land stewards |",
+          "speakerNotes": "Compare these metrics. Use this table when auditing external media sources."
+        },
+        {
+          "slideNumber": 10,
+          "title": "Exit Ticket: Rewriting for Agency",
+          "layout": "hero",
+          "content": "### Original Biased Excerpt\n> *\"Remote villages in Riau remain trapped in economic hardship as traditional palm oil methods face mounting international criticism.\"*\n* **Issue**: Uses loaded deficit terms (*\"trapped\"*, *\"hardship\"*) and ignores local agricultural innovation.\n\n### Journalistic Rewrite Criteria\n* Use active, objective register.\n* Restore community action and specific context.\n* Highlight transition to sustainable farming standards.",
+          "speakerNotes": "Complete your exit ticket by rewriting the biased excerpt to reflect agency, action, and sustainable progress."
         }
       ]
     },
