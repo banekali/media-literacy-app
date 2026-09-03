@@ -1,0 +1,188 @@
+/**
+ * Media Literacy & Critical Discourse Analysis Web App
+ * Custom Stylesheet & Print Engine Rules
+ */
+
+/* ==========================================================================
+   1. CUSTOM SCROLLBARS & UI SMOOTHING
+   ========================================================================== */
+
+/* Modern thin scrollbars for sidebar and content viewports */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Text clamp utility fallbacks */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Backdrop blur helper fallback */
+.backdrop-blur-xs {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* ==========================================================================
+   2. CUSTOM ANIMATIONS & TRANSITIONS
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Active focus ring outline styling for fillable elements */
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15) !important;
+}
+
+/* ==========================================================================
+   3. PRINT & PDF EXPORT STYLESHEET (@media print)
+   ========================================================================== */
+
+@media print {
+  /* Hide non-printable app UI elements */
+  header,
+  aside,
+  #sidebar-backdrop,
+  .print\:hidden,
+  button,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reset layout constraints for full page paper output */
+  body,
+  html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    height: auto !important;
+    overflow: visible !important;
+    font-size: 11pt !important;
+  }
+
+  #main-viewport {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+  }
+
+  #content-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Printable Worksheet Card Container Formatting */
+  #printable-worksheet {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Table rules for high contrast monochrome printing */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 9pt !important;
+    padding: 6px !important;
+  }
+
+  td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px !important;
+  }
+
+  /* Convert interactive inputs to plain readable text in print mode */
+  input[type="text"],
+  textarea,
+  select {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 10pt !important;
+    color: #000000 !important;
+    resize: none !important;
+    box-shadow: none !important;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  /* Header and sentence frame printable formatting */
+  .bg-indigo-50 {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  /* Force page margin setup for A4 / Letter standard printing */
+  @page {
+    size: letter portrait;
+    margin: 0.6in;
+  }
+}

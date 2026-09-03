@@ -1,0 +1,687 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "meta": {
+    "title": "Media Literacy and Critical Discourse Analysis",
+    "framework": "Content and Language Integrated Learning (CLIL)",
+    "targetAudience": "Intermediate Middle School ESL Students (CEFR B1 Level)",
+    "durationWeeks": 6,
+    "version": "1.0.0",
+    "lastUpdated": "2026-09-03"
+  },
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "title": "Real vs. Fake & Source Evaluation",
+      "summary": "Students learn to check online source reliability, identify domain suffixes, evaluate author credibility, and complete a Fact-Checker Matrix.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Collaborative desk pods of 4 students to support peer evaluation.",
+          "requiredMaterials": [
+            "Printed/Digital Fact-Checker Matrix Worksheet",
+            "Website Sample Cards (#1 to #4)",
+            "Highlighters/Markers"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Hook & Priming",
+            "durationMinutes": 15,
+            "facilitatorActions": "Ask students where they discover news online. Project 'How do we know if a story is real or fake?' on the screen.",
+            "script": "Welcome team! Today we start our journey as Media Detectives. Look at this headline on the screen. Do you believe it immediately, or do you ask questions first?"
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Guided Source Analysis",
+            "durationMinutes": 30,
+            "facilitatorActions": "Introduce domain suffixes (.go.id, .com, .blogspot.com) and demonstrate author verification using Sample Card #1.",
+            "script": "Notice the domain URL. A government or official educational domain like .go.id carries higher trust than an anonymous blog post."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Group Work & Fact-Checking Matrix",
+            "durationMinutes": 30,
+            "facilitatorActions": "Distribute Website Sample Cards #2-#4. Have student pods analyze author credentials, evidence, and assign trust scores.",
+            "script": "Work with your pod. Use the mandatory sentence frame to justify whether each card receives a Green, Yellow, or Red trust score."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Wrap-Up & Reflection",
+            "durationMinutes": 15,
+            "facilitatorActions": "Review answers using the Week 1 Answer Key and debrief key indicators of fake news.",
+            "script": "Who can tell me why Card #2 received a Red rating despite having an exciting headline?"
+          }
+        ]
+      },
+      "mediaCards": [
+        {
+          "id": "W1-CARD-1",
+          "title": "Dinosaur Discovery - Tempo.co",
+          "sourceType": "Verified News",
+          "domain": "www.tempo.co",
+          "author": "Named Science Journalist",
+          "trustRating": "High Trust (Green)",
+          "imagePath": "media/images/week1/WEBSITE_SAMPLE_CARD_1.png",
+          "altText": "Tempo.co news article covering a recent paleontological dinosaur discovery",
+          "description": "An official news article covering fossil discoveries with named expert quotes and verifiable references."
+        },
+        {
+          "id": "W1-CARD-2",
+          "title": "Secret Drink to Fly While Sleeping",
+          "sourceType": "Anonymous Blog / Clickbait",
+          "domain": "www.viralblogpost.com",
+          "author": "Anonymous / Admin",
+          "trustRating": "Fake / Unreliable (Red)",
+          "imagePath": "media/images/week1/WEBSITE_SAMPLE_CARD_2.png",
+          "altText": "Viral blog post with shocking headlines and exaggerated health claims",
+          "description": "Sensationalized post with no cited evidence, clickbait titles, and anonymous authorship."
+        },
+        {
+          "id": "W1-CARD-3",
+          "title": "Top 5 Beaches in Bali",
+          "sourceType": "Personal Travel Blog",
+          "domain": "www.travelvlogblog.com",
+          "author": "@BudiTravels (Lifestyle Blogger)",
+          "trustRating": "Check Further (Yellow)",
+          "imagePath": "media/images/week1/WEBSITE_SAMPLE_CARD_3.png",
+          "altText": "Personal travel blog post listing beach recommendations in Bali",
+          "description": "Subjective personal review blog. Useful for opinions, but requires cross-referencing for official travel facts."
+        },
+        {
+          "id": "W1-CARD-4",
+          "title": "BMKG Weather Announcement",
+          "sourceType": "Official Government Agency",
+          "domain": "www.bmkg.go.id",
+          "author": "Badan Meteorologi, Klimatologi, dan Geofisika",
+          "trustRating": "High Trust (Green)",
+          "imagePath": "media/images/week1/WEBSITE_SAMPLE_CARD_4.png",
+          "altText": "Official weather and climate portal of BMKG Indonesia",
+          "description": "Official government meteorological portal providing verified weather warnings and seismic data."
+        }
+      ],
+      "worksheet": {
+        "id": "WS-WEEK-1",
+        "title": "Fact-Checker Matrix Worksheet",
+        "instructions": "Examine each Website Sample Card. Identify the author/publisher, check for evidence, and assign a Verification Score.",
+        "type": "matrix",
+        "fields": [
+          {"key": "cardId", "label": "Card #", "type": "text", "readOnly": true},
+          {"key": "author", "label": "Who is the Author / Publisher?", "type": "text"},
+          {"key": "sourceType", "label": "Source Type", "type": "select", "options": ["Verified News", "Personal Blog", "Anonymous / Clickbait", "Government / Official"]},
+          {"key": "trustScore", "label": "Trust Score", "type": "select", "options": ["High Trust (Green)", "Check Further (Yellow)", "Fake / Unreliable (Red)"]},
+          {"key": "analysisSentence", "label": "Mandatory Analysis Sentence", "type": "textarea", "placeholder": "This source is [High Trust / Unreliable] because..."}
+        ],
+        "defaultRows": [
+          {"cardId": "W1-CARD-1"},
+          {"cardId": "W1-CARD-2"},
+          {"cardId": "W1-CARD-3"},
+          {"cardId": "W1-CARD-4"}
+        ],
+        "mandatorySentenceFrame": "This source is [High Trust / Unreliable] because it is published by [Author/Domain] and provides [Verifiable Evidence / Exaggerated Claims]."
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 1: Media Detectives - Real vs. Fake",
+          "layout": "hero",
+          "content": "# Becoming a Media Detective\nEvaluating Online Sources & Spotting Unreliable Information",
+          "speakerNotes": "Welcome students. Set the stage for digital citizenship and critical thinking."
+        },
+        {
+          "slideNumber": 2,
+          "title": "Anatomy of a URL Domain",
+          "layout": "split-text-image",
+          "content": "* **.go.id / .gov**: Government Agency (High Trust)\n* **.ac.id / .edu**: Academic / University (High Trust)\n* **.com / .org**: Commercial / Public (Verify Author)\n* **.blogspot.com / free domains**: Personal / Unverified",
+          "mediaId": "W1-CARD-4",
+          "speakerNotes": "Point out how domain extensions act as first-pass trust indicators."
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "title": "Word Choice, Tone & Headline Manipulation",
+      "summary": "Students analyze lexical bias, exaggerated clickbait language, and practice rewriting sensational headlines into neutral, factual statements.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Desk pods with side-by-side comparative text stations.",
+          "requiredMaterials": [
+            "Headline Transformation Worksheets",
+            "Source Cards #1 - #4 (WhatsApp, TikTok, News)",
+            "Yellow & Green Highlighters"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Hook & Priming",
+            "durationMinutes": 15,
+            "facilitatorActions": "Project contrasting headlines: 'Local Park Reopens After Repairs' vs. 'SHOCKING DISASTER AT LOCAL PARK'.",
+            "script": "Look at these two headlines describing the exact same event. How does the emotional language in the second headline alter your feelings?"
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Lexical Bias & Tone Analysis",
+            "durationMinutes": 30,
+            "facilitatorActions": "Teach students to spot loaded adjectives, emotional clickbait, and sensationalized verbs.",
+            "script": "Words like 'SHOCKING', 'MIRACLE', or 'MUST SEE' trigger emotional reactions rather than informing you with facts."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Headline Transformation Exercise",
+            "durationMinutes": 30,
+            "facilitatorActions": "Students identify clickbait triggers on TikTok/WhatsApp cards and rewrite them into factual news statements.",
+            "script": "Strip away the emotional noise. Rebuild the headline using clear, neutral vocabulary."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Peer Review & Debrief",
+            "durationMinutes": 15,
+            "facilitatorActions": "Have students present their neutral rewrites to their pod.",
+            "script": "Compare your neutral rewrite with your neighbor's. Did you both remove the emotional bias effectively?"
+          }
+        ]
+      },
+      "mediaCards": [
+        {
+          "id": "W2-CARD-1",
+          "title": "Ministry Official Press Release",
+          "sourceType": "Official Announcement",
+          "domain": "www.kemdikbud.go.id",
+          "author": "Kemendikbudristek",
+          "trustRating": "High Trust (Green)",
+          "imagePath": "media/images/week2/SOURCE_CARD_1.png",
+          "altText": "Official educational policy announcement on Kemdikbud website",
+          "description": "Factual government update on educational policy written in objective language."
+        },
+        {
+          "id": "W2-CARD-2",
+          "title": "Urgent WhatsApp Broadcast Message",
+          "sourceType": "Chat Chain Message",
+          "domain": "WhatsApp / Social Forward",
+          "author": "Anonymous Forwarded Message",
+          "trustRating": "Fake / Unreliable (Red)",
+          "imagePath": "media/images/week2/SOURCE_CARD_2.png",
+          "altText": "Urgent warning chain message shared via WhatsApp",
+          "description": "Alarmist text utilizing ALL CAPS, multiple exclamation marks, and unverified panic-inducing claims."
+        },
+        {
+          "id": "W2-CARD-3",
+          "title": "Cure Flu 100% in 2 Hours! - TikTok",
+          "sourceType": "Social Media Video",
+          "domain": "tiktok.com/@Gamerking_Indo",
+          "author": "@Gamerking_Indo",
+          "trustRating": "Fake / Unreliable (Red)",
+          "imagePath": "media/images/week2/SOURCE_CARD_3.png",
+          "altText": "TikTok viral video clip making exaggerated medical remedy claims",
+          "description": "Sensational short-form video clip promoting an unverified rapid medical remedy."
+        },
+        {
+          "id": "W2-CARD-4",
+          "title": "Central Java Heavy Rain Warning - Kompas.com",
+          "sourceType": "Verified News",
+          "domain": "kompas.com",
+          "author": "Kompas Regional Reporter",
+          "trustRating": "High Trust (Green)",
+          "imagePath": "media/images/week2/SOURCE_CARD_4.png",
+          "altText": "Kompas.com news article reporting on BMKG weather alerts",
+          "description": "Objective regional news update citing official BMKG weather warnings."
+        }
+      ],
+      "worksheet": {
+        "id": "WS-WEEK-2",
+        "title": "Headline Transformation Worksheet",
+        "instructions": "Read assigned Source Cards. Highlight emotional/clickbait words and rewrite each headline into a neutral statement.",
+        "type": "transformation-table",
+        "fields": [
+          {"key": "cardId", "label": "Card #", "type": "text", "readOnly": true},
+          {"key": "emotionalWords", "label": "Emotional Words (Clickbait)", "type": "text", "placeholder": "e.g., SHOCKING, CURE 100%, URGENT!"},
+          {"key": "neutralRewrite", "label": "Neutral / Factual Rewrite", "type": "textarea", "placeholder": "Write an objective, calm summary headline..."},
+          {"key": "transformationFrame", "label": "Mandatory Comparative Frame", "type": "textarea"}
+        ],
+        "defaultRows": [
+          {"cardId": "W2-CARD-2"},
+          {"cardId": "W2-CARD-3"}
+        ],
+        "mandatorySentenceFrame": "While the original headline uses loaded words like '[Word]' to trigger emotion, the rewritten headline neutrally states '[Fact]'."
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 2: Word Choice & Emotional Manipulation",
+          "layout": "hero",
+          "content": "# The Power of Lexical Choice\nHow Media Outlets Use Tone and Loaded Words to Influence Readers",
+          "speakerNotes": "Focus on language nuances and emotional triggers in headlines."
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "title": "Spotting Opinion vs. Fact & Ads",
+      "summary": "Students categorize media into Objective Fact, Editorial Opinion, and Native Advertising using key indicator vocabulary and contrast connectors.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Collaborative desk pods with sorting stations for media portfolio cards.",
+          "requiredMaterials": [
+            "Media Portfolio Sorting Packets",
+            "Contrast Connector Reference Sheets",
+            "Category Labels (Fact, Opinion, Ad)"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Hook & Priming",
+            "durationMinutes": 15,
+            "facilitatorActions": "Project three contrasting snippets: an objective report, an opinion piece, and a sponsored article.",
+            "script": "Can you tell which of these articles is trying to inform you, which is giving an opinion, and which is secretly trying to sell you a product?"
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Media Categorization & Key Indicators",
+            "durationMinutes": 30,
+            "facilitatorActions": "Teach indicator terms (e.g., 'data proves', 'in my view', 'sponsored content', 'promoted').",
+            "script": "Notice words like 'I believe' or 'should' indicate opinion, whereas metrics and official data signal objective facts."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Portfolio Sorting Activity",
+            "durationMinutes": 30,
+            "facilitatorActions": "Groups analyze Media Sample Cards #1-#4 and complete their categorization worksheet using contrast connectors.",
+            "script": "Use contrast connectors like 'however', 'on the other hand', and 'unlike' when justifying your classifications."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Review & Class Discussion",
+            "durationMinutes": 15,
+            "facilitatorActions": "Review sorted cards using the Week 3 Answer Key.",
+            "script": "Why is Card #3 considered an advertisement despite looking like a regular beauty blog post?"
+          }
+        ]
+      },
+      "mediaCards": [
+        {
+          "id": "W3-CARD-1",
+          "title": "PLN Solar Power Plant in South Sulawesi",
+          "sourceType": "Objective News (Fact)",
+          "domain": "www.nusantaranews.id",
+          "author": "Nusantara News Staff",
+          "trustRating": "Objective Fact",
+          "imagePath": "media/images/week3/MEDIA_SAMPLE_CARD_1.png",
+          "altText": "Nusantara News coverage of PLN solar power plant completion",
+          "description": "Factual news report detailing infrastructure completion metrics and verified technical specs."
+        },
+        {
+          "id": "W3-CARD-2",
+          "title": "Fast Fashion is Destroying Our Culture",
+          "sourceType": "Editorial Opinion Column",
+          "domain": "thejakartapost.com/opinion",
+          "author": "Dr. Aisha Rahmani (Guest Columnist)",
+          "trustRating": "Editorial Opinion",
+          "imagePath": "media/images/week3/MEDIA_SAMPLE_CARD_2.png",
+          "altText": "Jakarta Post opinion column discussing fast fashion environmental impact",
+          "description": "Persuasive editorial column expressing author arguments and subjective commentary on fast fashion."
+        },
+        {
+          "id": "W3-CARD-3",
+          "title": "5 Ways to Combat City Grime - PureGlow Water",
+          "sourceType": "Sponsored Advertisement",
+          "domain": "blog.citypulse-news.com/beauty",
+          "author": "Sponsored Content / PureGlow Brand",
+          "trustRating": "Sponsored Advertisement",
+          "imagePath": "media/images/week3/MEDIA_SAMPLE_CARD_3.png",
+          "altText": "CityPulse News sponsored skincare post promoting PureGlow Water",
+          "description": "Native advertorial formatted like a lifestyle article designed to promote a specific skincare brand."
+        },
+        {
+          "id": "W3-CARD-4",
+          "title": "MegaOil Funds Coral Reef Initiative",
+          "sourceType": "Corporate PR / Press Release",
+          "domain": "megaoil.com/newsroom",
+          "author": "MegaOil PR Department",
+          "trustRating": "Corporate PR / Check Further",
+          "imagePath": "media/images/week3/MEDIA_SAMPLE_CARD_4.png",
+          "altText": "MegaOil Corporation press release highlighting reef restoration project",
+          "description": "Corporate press release highlighting environmental efforts, requiring critical discourse analysis."
+        }
+      ],
+      "worksheet": {
+        "id": "WS-WEEK-3",
+        "title": "Media Portfolio Sorting Worksheet",
+        "instructions": "Examine each Media Sample Card. Sort them into Objective Fact, Editorial Opinion, or Sponsored Advertisement.",
+        "type": "sorting-table",
+        "fields": [
+          {"key": "cardId", "label": "Card #", "type": "text", "readOnly": true},
+          {"key": "category", "label": "Category", "type": "select", "options": ["Objective Fact", "Editorial Opinion", "Sponsored Advertisement"]},
+          {"key": "keyIndicators", "label": "Key Indicator Words", "type": "text", "placeholder": "e.g., 'data proves', 'I believe', 'ADVERTISEMENT'"},
+          {"key": "explanation", "label": "Written Explanation & Contrast Frame", "type": "textarea"}
+        ],
+        "defaultRows": [
+          {"cardId": "W3-CARD-1"},
+          {"cardId": "W3-CARD-2"},
+          {"cardId": "W3-CARD-3"},
+          {"cardId": "W3-CARD-4"}
+        ],
+        "mandatorySentenceFrame": "Unlike Sample Card #[X], which presents [Objective Facts], Sample Card #[Y] is [An Opinion / An Advertisement] because it uses [Indicator Words]."
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 3: Distinguishing Fact, Opinion & Native Advertising",
+          "layout": "hero",
+          "content": "# Fact, Opinion, or Sales Pitch?\nRecognizing Intent in Modern Digital Media",
+          "speakerNotes": "Teach students to spot subtle native advertisements and editorial stance."
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "title": "Comparing Two Sides of a Story",
+      "summary": "Students conduct side-by-side comparative analysis of paired news articles covering the same event to evaluate emphasis, framing, and omissions.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Desk pods equipped with side-by-side comparative analysis stations.",
+          "requiredMaterials": [
+            "Comparative News Envelopes (Article Pairs #1 & #2)",
+            "Side-by-Side Comparison Matrices",
+            "Voting Cards (Green/Yellow/Red)"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Hook & Priming",
+            "durationMinutes": 15,
+            "facilitatorActions": "Project contrasting headlines: 'New City LRT Brings 500 Jobs' vs. 'LRT Construction Forces Shophouse Closures'.",
+            "script": "Both articles discuss the new LRT train line. Why does one feel like great news while the other feels like a community disaster?"
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Comparative Analysis Framework",
+            "durationMinutes": 30,
+            "facilitatorActions": "Demonstrate how to analyze focus, main ideas, included details, and omitted perspectives using Pair #1.",
+            "script": "When an article omits specific facts, it creates a selective bias. Look at what is missing just as closely as what is written."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Group Side-by-Side Matrix Work",
+            "durationMinutes": 30,
+            "facilitatorActions": "Pods complete the Side-by-Side Comparison Matrix for Article Pair #2 (Digital Textbooks vs. Screen Time Overload).",
+            "script": "Fill out your comparative matrices using the mandatory comparative sentence frames."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Class Synthesis & Debate",
+            "durationMinutes": 15,
+            "facilitatorActions": "Facilitate group presentation of comparison findings.",
+            "script": "Which article provided a more balanced perspective, and what critical details were omitted?"
+          }
+        ]
+      },
+      "mediaCards": [
+        {
+          "id": "W4-CARD-1A",
+          "title": "New LRT Extension Project - City Infra",
+          "sourceType": "Official Infrastructure Press Release",
+          "domain": "www.cityinfra.go.id",
+          "author": "City Infrastructure Press Office",
+          "trustRating": "High Trust / Infrastructure Perspective",
+          "imagePath": "media/images/week4/ARTICLE_CARD_1A.png",
+          "altText": "City Infrastructure press release on LRT extension benefits",
+          "description": "Article highlighting economic progress, reduced commute times, and modern transit benefits."
+        },
+        {
+          "id": "W4-CARD-1B",
+          "title": "LRT Construction Threatens Shophouses - Community Gazette",
+          "sourceType": "Local Community Newspaper",
+          "domain": "localcommunitygazette.com",
+          "author": "Urban Affairs Reporter",
+          "trustRating": "High Trust / Local Business Stance",
+          "imagePath": "media/images/week4/ARTICLE_CARD_1B.png",
+          "altText": "Local Community Gazette article on shophouse closures due to LRT construction",
+          "description": "Article focusing on economic loss, disruption to historic family businesses, and construction chaos."
+        },
+        {
+          "id": "W4-CARD-2A",
+          "title": "Digital Classrooms Boost Engagement - EdTech Weekly",
+          "sourceType": "EdTech Industry News",
+          "domain": "edtechweekly.com",
+          "author": "Sarah Jenkins (Education Reporter)",
+          "trustRating": "Check Further / Tech-Optimist Stance",
+          "imagePath": "media/images/week4/ARTICLE_CARD_2A.png",
+          "altText": "EdTech Weekly report promoting digital textbooks in schools",
+          "description": "Article promoting digital tablet adoption, lighter backpacks, and interactive learning advantages."
+        },
+        {
+          "id": "W4-CARD-2B",
+          "title": "Screen Time Overload - Parent-Teacher Forum",
+          "sourceType": "Parent Advocacy Forum",
+          "domain": "www.ptvoiceforum.org",
+          "author": "PT Voice Forum Editor",
+          "trustRating": "Check Further / Health-Conscious Stance",
+          "imagePath": "media/images/week4/ARTICLE_CARD_2B.png",
+          "altText": "Parent-Teacher Voice Forum article raising concerns on digital textbook screen time",
+          "description": "Article emphasizing eye strain, digital distraction, and decreased physical handwriting skills."
+        }
+      ],
+      "worksheet": {
+        "id": "WS-WEEK-4",
+        "title": "Side-by-Side Comparison Matrix Worksheet",
+        "instructions": "Compare each pair of articles covering the same event. Identify focus, included details, and omissions.",
+        "type": "comparative-matrix",
+        "fields": [
+          {"key": "pairId", "label": "Article Pair", "type": "text", "readOnly": true},
+          {"key": "focusA", "label": "Article A Focus & Main Idea", "type": "textarea"},
+          {"key": "focusB", "label": "Article B Focus & Main Idea", "type": "textarea"},
+          {"key": "omittedDetails", "label": "Key Details Omitted (A vs B)", "type": "textarea"},
+          {"key": "comparativeSentence", "label": "Mandatory Comparative Frame", "type": "textarea"}
+        ],
+        "defaultRows": [
+          {"pairId": "PAIR #1 (Cards 1A & 1B - LRT Transit Project)"},
+          {"pairId": "PAIR #2 (Cards 2A & 2B - Digital Textbooks)"}
+        ],
+        "mandatorySentenceFrame": "While Article [A] emphasizes [Economic Gains / Tech Benefits], Article [B] focuses on [Community Losses / Health Risks], omitting facts about [Omitted Detail]."
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 4: Comparing Two Sides of a Story",
+          "layout": "hero",
+          "content": "# Framing and Selective Emphasis\nHow Different News Outlets Tell the Same Story Differently",
+          "speakerNotes": "Guide students through side-by-side comparative discourse analysis."
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "title": "Group Project: The Media Investigation",
+      "summary": "Student teams operate as editorial newsroom pods to investigate assigned media dossiers and build a structured 4-slide media audit presentation.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Collaborative newsroom pods equipped with shared digital presentation templates.",
+          "requiredMaterials": [
+            "Assigned Media Topic Dossiers (Case Cards #1 - #4)",
+            "4-Slide Investigation Planning Worksheets",
+            "Presentation Signposting Guides"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Editorial Briefing & Setup",
+            "durationMinutes": 15,
+            "facilitatorActions": "Assign newsroom pods and distribute Media Case Dossiers (SuperEnergy Drink, Health Notice, AI Teachers, Eco Project).",
+            "script": "Welcome newsroom teams. Today you begin your group investigation. Your goal is to audit your assigned media item and prepare a 4-slide report."
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Group Investigation & Analysis",
+            "durationMinutes": 30,
+            "facilitatorActions": "Guide pods through examining author intent, target audience, bias indicators, and missing evidence.",
+            "script": "Assign specific speaking roles for each slide. Ensure every speaker uses mandatory academic signposting phrases."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Slide Deck Construction",
+            "durationMinutes": 30,
+            "facilitatorActions": "Assist students in completing their 4-Slide Planning Worksheets and digital slide drafts.",
+            "script": "Slide 1 introduces your source, Slide 2 details word choice, Slide 3 exposes bias or omission, and Slide 4 delivers your final verdict."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Progress Check & Facilitator Feedback",
+            "durationMinutes": 15,
+            "facilitatorActions": "Review draft plans and provide formative feedback before Week 6 presentations.",
+            "script": "Rehearse your presentation transition frames before our final showcase next week."
+          }
+        ]
+      },
+      "mediaCards": [
+        {
+          "id": "W5-CARD-1",
+          "title": "SuperEnergy Commercial Campaign",
+          "sourceType": "Commercial Product Campaign",
+          "domain": "www.superenergy-campaign.com",
+          "author": "SuperEnergy Marketing Team",
+          "trustRating": "Unreliable Commercial Claim",
+          "imagePath": "media/images/week5/CASE_CARD_1_COMMERCIAL.jpeg",
+          "altText": "SuperEnergy Drink commercial campaign promising extreme focus in 5 minutes",
+          "description": "Exaggerated energy drink advertisement targeting exam-stressed students."
+        },
+        {
+          "id": "W5-CARD-2",
+          "title": "Dengue Public Health Alert",
+          "sourceType": "Public Health Notice",
+          "domain": "www.health.go.id",
+          "author": "Ministry of Health (Kemenkes RI)",
+          "trustRating": "Verified Official Notice",
+          "imagePath": "media/images/week5/CASE_CARD_2_PUBLIC_HEALTH.jpg",
+          "altText": "Official Ministry of Health public advisory regarding dengue prevention",
+          "description": "Verified public health advisory providing actionable disease prevention guidelines."
+        },
+        {
+          "id": "W5-CARD-3",
+          "title": "AI Robots Will Replace All Teachers by 2030!",
+          "sourceType": "Speculative Tech Blog Post",
+          "domain": "techyouthblog.com",
+          "author": "Tech Youth Editorial Team",
+          "trustRating": "Sensationalized / Unreliable",
+          "imagePath": "media/images/week5/CASE_CARD_3_TECH_NEWS.png",
+          "altText": "Tech blog headline making sensational predictions about AI replacing teachers",
+          "description": "Sensational blog post presenting speculative future predictions as proven upcoming facts."
+        },
+        {
+          "id": "W5-CARD-4",
+          "title": "Eco Youth Project Blog",
+          "sourceType": "Student Community Blog",
+          "domain": "techyouthonline.blogspot.com",
+          "author": "Youth Climate Activists",
+          "trustRating": "Check Further / Advocacy",
+          "imagePath": "media/images/week5/CASE_CARD_4_ECO_PROJECT.png",
+          "altText": "Youth community blog post covering local eco initiatives",
+          "description": "Community advocacy blog sharing passion projects, requiring fact-checking on quoted statistics."
+        }
+      ],
+      "worksheet": {
+        "id": "WS-WEEK-5",
+        "title": "4-Slide Investigation Planning Worksheet",
+        "instructions": "Plan your group's 4-slide presentation script. Assign speaking roles and mandatory signposting frames for each slide.",
+        "type": "project-planner",
+        "fields": [
+          {"key": "slideNum", "label": "Slide # & Title", "type": "text", "readOnly": true},
+          {"key": "contentFocus", "label": "Slide Content & Analysis Focus", "type": "textarea"},
+          {"key": "assignedSpeaker", "label": "Assigned Speaker", "type": "text"},
+          {"key": "signpostingFrame", "label": "Mandatory Signposting Frame", "type": "textarea"}
+        ],
+        "defaultRows": [
+          {"slideNum": "SLIDE 1: Introduction & Source Credentials", "signpostingFrame": "First, we examined [Source Title], created by [Author/Publisher] on [Date]."},
+          {"slideNum": "SLIDE 2: Word Choice & Emotional Tone", "signpostingFrame": "Moving to language analysis, we noticed loaded words such as '[Word]' which create a [Tone] tone."},
+          {"slideNum": "SLIDE 3: Omissions & Perspective Bias", "signpostingFrame": "On the other hand, the author completely omits any mention of [Omitted Detail]."},
+          {"slideNum": "SLIDE 4: Final Verdict & Trust Score", "signpostingFrame": "In conclusion, based on our investigation, we rate this source as [Green / Yellow / Red] because..."}
+        ]
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 5: Group Project - The Media Investigation",
+          "layout": "hero",
+          "content": "# Newsroom Investigation\nBuilding Your Group's 4-Slide Media Audit Presentation",
+          "speakerNotes": "Set up newsroom pods and guide group slide planning."
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "title": "The Media Literacy Showcase & Review",
+      "summary": "Student newsrooms deliver 4-slide media audit presentations, engage in polite peer questioning, and complete program self-reflections.",
+      "teacherGuide": {
+        "logistics": {
+          "sessionDuration": "60 – 90 Minutes",
+          "layout": "Conference presentation stage setup with audience seating facing the podium.",
+          "requiredMaterials": [
+            "Completed Team Slide Decks",
+            "Presentation Rubrics",
+            "Polite Questioning Reference Sheets",
+            "Student Self-Reflection Forms"
+          ]
+        },
+        "phases": [
+          {
+            "phaseNumber": 1,
+            "title": "Showcase Briefing & Setup",
+            "durationMinutes": 15,
+            "facilitatorActions": "Brief the class on audience protocol, scoring rubrics, and polite peer questioning rules.",
+            "script": "Welcome to the Media Literacy Showcase! As audience members, your job is to listen critically and ask respectful questions using our reference frames."
+          },
+          {
+            "phaseNumber": 2,
+            "title": "Group Presentations & Q&A",
+            "durationMinutes": 45,
+            "facilitatorActions": "Newsroom pods present their 4-slide media audits. Peer groups ask follow-up questions.",
+            "script": "Thank you Team 1. We now open the floor for one polite question from the audience."
+          },
+          {
+            "phaseNumber": 3,
+            "title": "Comprehensive Program Review",
+            "durationMinutes": 15,
+            "facilitatorActions": "Synthesize key learnings from across all 6 weeks (URLs, tone, fact vs. opinion, comparative framing).",
+            "script": "Reflect on how far you have come—from accepting headlines at face value to analyzing critical discourse like expert journalists."
+          },
+          {
+            "phaseNumber": 4,
+            "title": "Self-Reflection & Graduation",
+            "durationMinutes": 15,
+            "facilitatorActions": "Students complete their individual self-reflection forms and celebrate unit completion.",
+            "script": "Congratulations Media Detectives! Carry these analytical tools with you whenever you read news online."
+          }
+        ]
+      },
+      "mediaCards": [],
+      "worksheet": {
+        "id": "WS-WEEK-6",
+        "title": "Student Self-Reflection & Evaluation Sheet",
+        "instructions": "Reflect on your growth as a critical media reader over the past 6 weeks.",
+        "type": "reflection-form",
+        "fields": [
+          {"key": "topSkill", "label": "What is the most important skill you learned?", "type": "textarea"},
+          {"key": "mediaHabitChange", "label": "How will you read social media or news differently now?", "type": "textarea"},
+          {"key": "favoriteActivity", "label": "Which week's activity was most engaging and why?", "type": "textarea"}
+        ],
+        "defaultRows": [{}]
+      },
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Week 6: The Media Literacy Showcase",
+          "layout": "hero",
+          "content": "# Final Media Showcase\nPresenting Investigations & Demonstrating Critical Discourse Mastery",
+          "speakerNotes": "Welcome audience and facilitate student presentations."
+        }
+      ]
+    }
+  ]
+}
